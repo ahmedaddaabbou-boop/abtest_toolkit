@@ -8,3 +8,7 @@ wheels/
 
 # Virtual environments
 .venv
+# 30 day ai generated plan and the guide
+30-day-plan.md
+abtest-toolkit-build-guide.md
+week-0-daily-plan.md
