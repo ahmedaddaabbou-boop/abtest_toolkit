@@ -1,0 +1,31 @@
+[project]
+name = "abtest-toolkit"
+version = "0.1.0"
+description = "A/B testing toolkit: design, diagnostics, analysis, and variance reduction."
+readme = "README.md"
+authors = [
+    { name = "AHMED REDA ADDA ABBOU", email = "ahmed.addaabbou@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.2",
+    "pandas>=3.0.5",
+    "scipy>=1.18.1",
+]
+
+[project.scripts]
+abtest-toolkit = "abtest_toolkit:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+    "pytest>=9.1.1",
+    "pytest-cov>=7.1.0",
+    "ruff>=0.16.4",
+    "statsmodels>=0.14.6",
+]
